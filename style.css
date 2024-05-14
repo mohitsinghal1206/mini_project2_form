@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0; /*null or reset layout*/
+  box-sizing: border-box;
+}
+body {
+  background-image: url("image/bg.jpg");
+  /* background-color: grey; */
+}
+/* #in{
+    height: 100%;
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    z-index: 99;
+  } */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+/* #container::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    height: 600px;
+    width: 200px;
+    background-color: white;
+    animation: move 1.5s infinite;
+  }
+  @keyframes move {
+    100% {
+      transform: translate(-50%, -50%) rotate(225deg);
+    }
+  } */
+.apply_box {
+  max-width: 600px;
+  padding: 20px;
+  background-color: rgb(142, 190, 226);
+  margin: 0 auto; /*for centre algin */
+  margin-top: 50px;
+  box-shadow: 4px 5px 3px;
+  border-radius: 10px;
+}
+.apply_box:hover {
+  border: 2px solid red;
+  transition: all 0.3s;
+}
+.title_small {
+  font-size: 20px;
+}
+.form_container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+.form_control {
+  display: flex;
+  flex-direction: column;
+}
+label {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+input,
+select,
+textarea {
+  padding: 6px 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 15px;
+}
+input:focus {
+  outline-color: red;
+}
+.button_container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+button {
+  background-color: red;
+  border: transparent solid 2px;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 8px;
+  transition: 0.3s ease-in;
+}
+button:hover {
+  background-color: grey;
+  border: 2px solid red;
+  color: black;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.textarea_control {
+  grid-column: 1 / span 2;
+}
+.textarea_control textarea {
+  width: 100%;
+}
+/*media queries*/
+@media (max-width: 460px) {
+  .textarea_control {
+    grid-column: 1 / span 1;
+  }
+}
