@@ -39,7 +39,7 @@ body {
   padding: 20px;
   background-color: rgb(142, 190, 226);
   margin: 0 auto; /*for centre algin */
-  margin-top: 50px;
+  margin-top: 0px;
   box-shadow: 4px 5px 3px;
   border-radius: 10px;
 }
